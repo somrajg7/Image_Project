@@ -1,0 +1,29 @@
+{
+  "name": "image-grid",
+  "version": "1.0.0",
+  "description": "responsive image galery to render images and show them on a modal on click of any image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node index.js",
+    "dev": "nodemon index.js",
+    "start": "concurrently \"npm run build\" \"npm run open\"",
+    "start-dev": "concurrently \"npm run dev\" \"npm run open\"",
+    "open": "concurrently \"http-server -a localhost -p 5000 -o\""
+  },
+  "keywords": [
+    "javascript",
+    "css",
+    "html"
+  ],
+  "author": "somraju gangishetti",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "http-server": "^14.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

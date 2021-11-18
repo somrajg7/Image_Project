@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo gallery UI</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="./modal.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="header">
+          <h1 class="logo">LivePhotos</h1>
+          <form>
+            <input type="text" placeholder="Search" />
+            <ion-icon name="search-outline"></ion-icon>
+          </form>
+        </div>
+        <div class="gallery"></div>
+        <a class="load-more" data-img="curated">Load More</a>
+      </div>
+    </section>
+    <div id="jsModal" class="modal hide">
+      <div class="modal__overlay jsOverlay"></div>
+      <div class="modal__container">
+        <button class="modal__close jsModalClose">&#10005;</button>
+        <div id="img-container"></div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="./main.js"></script>
+    <script src="./modal.js"></script>
+  </body>
+</html>
